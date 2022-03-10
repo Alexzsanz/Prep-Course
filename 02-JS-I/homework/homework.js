@@ -110,7 +110,7 @@ function esPar(num) {
     // Devuelve "true" si "num" es par
     // De lo contrario, devuelve "false"
     // Tu código:
-    if (num % 4 === 0) {
+    if (num % 2 === 0) {
         return true;
     } else {
         return false;
@@ -153,20 +153,21 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
     // Redondea "num" al entero más próximo y devuélvelo
     // Tu código:
-    Math.round(num);
+
+    return Math.round(num);
 }
 
 function redondearHaciaArriba(num) {
     // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
     // Tu código:
-    Math.ceil(num);
+    return Math.ceil(num);
 
 }
 
 function numeroRandom() {
     //Generar un número al azar entre 0 y 1 y devolverlo
     //Pista: investigá qué hace el método Math.random()
-    Math.random();
+    return Math.random();
 }
 
 function esPositivo(numero) {
@@ -195,8 +196,7 @@ function combinarNombres(nombre, apellido) {
     // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
     // Ejemplo: "Soy", "Henry" -> "Soy Henry"
     // Tu código:
-    var combinar = nombre('Solana ') + apellido('Salinas')
-    return combinar;
+    return nombre + ' ' + apellido;
 
 }
 
@@ -204,8 +204,7 @@ function obtenerSaludo(nombre) {
     // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
     // "Martin" -> "Hola Martin!"
     // Tu código:
-    var saludo = nombre("Matin");
-    return "Hola " + nombre + '!';
+    return 'Hola ' + nombre + '!';
 
 }
 
